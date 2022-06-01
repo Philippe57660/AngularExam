@@ -1,0 +1,22 @@
+<h1>Détail de l'article</h1>
+
+<div class="article-detail-container">
+    <div class="article-container">
+        <p class="article-detail-titre">{{article.titre}}</p>
+        <p class="article-detail-auteur">Article crée par {{auteurArt.pseudo}}</p>
+        <p class="article-detail-contenu">{{article.contenu}}</p>
+        <div class="up-del-container" *ngIf="loginService.isCurrentUserId(auteurArt.id)">
+            <a routerLink="/modifier-article/{{article.id_article}}" >Modifier l'article</a> 
+            <button (click)="supprimerArticle(article.id_article)">Supprimer l'article</button>
+        </div>
+
+    <div class="article-detail-commentaire">Commentaires</div>
+
+    <app-ajout-commentaire idArticle="{{article.id_article}}"></app-ajout-commentaire>
+
+    <div class="article-detail-commentaire-container" *ngFor="let commentaire of commentaires; index as i">
+        <div class="article-detail-com-user">{{auteurCom[i].pseudo}}</div>
+        <div class="article-detail-com-contenu">{{commentaire.contenu}}</div>
+    </div>
+
+</div>

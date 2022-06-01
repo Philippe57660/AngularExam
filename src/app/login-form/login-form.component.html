@@ -1,0 +1,21 @@
+<h1>Connexion</h1>
+
+<form [formGroup]="loginForm" (ngSubmit)="validForm()">
+    <div>
+        <div class="input-container">
+            <label for="email">Email</label><br>
+            <input class="litle-input" name="email" type="text" formControlName="email">
+        </div>
+        <div class="input-container">
+            <label for="pwd">Mot de passe</label><br>
+            <input class="litle-input" name="pwd" type="text" formControlName="pwd">
+        </div>
+
+        <div>
+            <input class="submit" type="submit" value="Connexion">
+        </div>
+    </div>
+
+</form>
+
+

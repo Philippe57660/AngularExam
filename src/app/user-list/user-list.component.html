@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <th>Image de profil</th>
+        <th>Pseudo</th>
+        <th></th>
+    </tr>
+    <tr class="trliste" *ngFor="let user of users; index as i">
+        <td class="tdimg"><img src="{{ user.avatar }}" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png'"></td>
+        <td class="tdpseudo">{{ user.pseudo }}</td>
+        <td class="tdbouton"><a routerLink="/detail-user/{{user.id}}"><button>Plus d'infos</button></a></td>
+    </tr>
+</table>

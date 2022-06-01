@@ -1,0 +1,19 @@
+<h1>Modifier un article</h1>
+
+<form [formGroup]="articleUpForm" (ngSubmit)="validFormUpArticle()">
+    <div>
+        <div class="input-container">
+            <label for="titre">Titre</label><br>
+            <input class="litle-input" name="titre" type="text" formControlName="titre">
+        </div>
+        <div class="input-container">
+            <label for="contenu">Contenu</label><br>
+            <textarea class="big-input" name="contenu" type="textarea" formControlName="contenu"></textarea>
+        </div>
+
+        <div>
+            <input class="submit" type="submit" value="Enregistrer les modifications">
+        </div>
+    </div>
+
+</form>

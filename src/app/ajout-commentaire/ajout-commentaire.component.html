@@ -1,0 +1,7 @@
+<form [formGroup]="commentaireAddForm" (ngSubmit)="validFormAddCommentaire()">
+    <div class="add-comm">
+        <label class="article-detail-commentaire" for="contenu">Ajouter un commentaire</label><br>
+        <input class="comment-input" name="contenu" type="text" formControlName="contenu" placeholder="Écrivez votre commentaire">
+        <input class="comment-button" type="submit" value="Commenter">
+    </div>
+</form>

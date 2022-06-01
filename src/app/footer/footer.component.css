@@ -1,0 +1,12 @@
+.footer-p{
+    margin-bottom: 0;
+    text-align: center;
+    background-color: rgb(26, 29, 23);
+    color: white;
+    width:100%;
+    padding:20px 0;
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 0;
+    height: 2.5rem;
+}

@@ -1,0 +1,77 @@
+h1{
+    margin:50px;
+    text-align: center;
+}
+
+.profil-photo{
+    text-align: center;
+}
+
+.profil-photo img{
+    max-width: 300px;
+    border-radius: 60px;
+    box-shadow: 15px 15px 5px #2c2f33;
+}
+
+.art-com-container{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.art-com-sub-container{
+    margin:auto;
+}
+
+.dernier-h1{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.up-del-container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom:40px;
+}
+
+.up-del-container-else{
+    text-align:center;
+    color:red;
+    margin-bottom:40px;
+    font-size:18px
+}
+
+.up-del-container a{
+    margin:auto;
+    text-decoration: none;
+    padding:10px;
+    border: 1px solid #ffc107;
+    font-size: 1rem;
+    background-color: #ffc107;
+}
+
+.up-del-container a:hover{
+    background-color: #e0a800;
+    border: 1px solid #e0a800;
+}
+
+.up-del-container button{
+    margin:auto;
+    margin-left: 20px;
+    text-decoration: none;
+    padding:10px;
+    border: 1px solid #dc3545;
+    color:white;
+    border-radius: 0;
+    background-color: #dc3545;
+    font-size: 1rem;
+}
+
+.up-del-container button:hover{
+    background-color: #c82333;
+    border: 1px solid #c82333;
+    cursor: pointer;
+}

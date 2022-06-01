@@ -1,0 +1,22 @@
+<h1>Profil de {{user.pseudo}}</h1>
+
+<div class="up-del-container" *ngIf="loginService.isCurrentUserId(user.id)">
+    <a routerLink="/update-profil/{{user.id}}">Modifier le profil</a>
+    <button (click)="supprimerProfil(user.id)">Supprimer le profil</button>
+</div>
+<div class="up-del-container-else" *ngIf="!loginService.isCurrentUserId(user.id)">
+    Vous ne pouvez pas modifier ni supprimer ce profil car ce n'est pas le votre !
+</div>
+
+<div class="profil-photo"><img src="{{user.avatar}}" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png'"></div>
+
+<div class="art-com-container">
+    <div class="art-com-sub-container">
+        <div class="dernier-h1">5 derniers articles</div>
+        <div *ngFor="let article of userArticles; index as i">{{article.titre}}</div>
+    </div>
+    <div class="art-com-sub-container">
+        <div class="dernier-h1">5 derniers commentaires</div>
+        <div *ngFor="let commentaire of userCommentaires; index as i">{{commentaire.contenu}}</div>
+    </div>
+</div>
