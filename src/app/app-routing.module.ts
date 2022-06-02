@@ -10,6 +10,7 @@ import { ModifierArticleComponent } from './modifier-article/modifier-article.co
 import { AjoutCommentaireComponent } from './ajout-commentaire/ajout-commentaire.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { DetailUserComponent } from './detail-user/detail-user.component';
+import { ModifierUserComponent } from './modifier-user/modifier-user.component';
 
 import { ConnectGuardGuard } from './connect-guard.guard';
 
@@ -24,6 +25,7 @@ const routes: Routes = [
     { path: "ajout-commentaire", component: AjoutCommentaireComponent, canActivate: [ConnectGuardGuard] },
     { path: "user-list", component: UserListComponent, canActivate: [ConnectGuardGuard] },
     { path: "detail-user/:id", component: DetailUserComponent, canActivate: [ConnectGuardGuard] },
+    { path: "modifier-user/:id", component: ModifierUserComponent, canActivate: [ConnectGuardGuard] },
 ];
 
 @NgModule({

@@ -47,17 +47,6 @@ export class ArticleListComponent implements OnInit {
         console.log(err);
       }
     });
-
-  /*  this.loginService.getUser(this.idAcharger).subscribe({
-      next(ret) {
-        console.log(ret);
-        that.user = ret;
-      },
-      error(err){
-        console.log(err);
-      }
-    });*/
-
   }
 
 }

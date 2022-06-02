@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     margin:0px;
+    background: url('https://www.lycee-saintexupery-fameck.fr/wp-content/uploads/2020/09/orig_331374.jpg') no-repeat center center fixed;
+    background-size: cover;
 }

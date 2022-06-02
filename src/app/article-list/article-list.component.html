@@ -2,11 +2,10 @@
 
 <div class="article-container">
     <div class="article-section" *ngFor="let article of articles; index as i">
-        
-            <div class="accueil-titre">{{article.titre}}</div>
-            <div class="accueil-pseudo">Crée par {{auteurArticles[i].pseudo}}</div>
-            <div class="accueil-contenu">{{article.contenu.substring(0, 60)}}...</div><br>
-            <a routerLink="/detail-article/{{article.id_article}}"><button>Voir plus</button></a>
+        <div class="accueil-titre">{{article.titre}}</div>
+        <div class="accueil-pseudo">Crée par {{auteurArticles[i].pseudo}}</div>
+        <div class="accueil-contenu">{{article.contenu.substring(0, 120)}}...</div><br>
+        <a routerLink="/detail-article/{{article.id_article}}"><button>Voir plus</button></a>
     </div>
-    <div></div>
 </div>
+<br><br><br><br>

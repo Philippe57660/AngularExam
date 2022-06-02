@@ -1,7 +1,7 @@
 <h1>Profil de {{user.pseudo}}</h1>
 
 <div class="up-del-container" *ngIf="loginService.isCurrentUserId(user.id)">
-    <a routerLink="/update-profil/{{user.id}}">Modifier le profil</a>
+    <a routerLink="/modifier-user/{{user.id}}">Modifier le profil</a>
     <button (click)="supprimerProfil(user.id)">Supprimer le profil</button>
 </div>
 <div class="up-del-container-else" *ngIf="!loginService.isCurrentUserId(user.id)">

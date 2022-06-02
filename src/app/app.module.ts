@@ -17,6 +17,7 @@ import { ModifierArticleComponent } from './modifier-article/modifier-article.co
 import { AjoutCommentaireComponent } from './ajout-commentaire/ajout-commentaire.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { DetailUserComponent } from './detail-user/detail-user.component';
+import { ModifierUserComponent } from './modifier-user/modifier-user.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,7 @@ import { DetailUserComponent } from './detail-user/detail-user.component';
     AjoutCommentaireComponent,
     UserListComponent,
     DetailUserComponent,
+    ModifierUserComponent,
   ],
   imports: [
     BrowserModule,
