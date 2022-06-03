@@ -2,7 +2,7 @@
         <div class="header-sub-container" *ngIf="isConnected()==true; then thenBlock else elseBlock"></div>
         <ng-template #thenBlock>
             <ul>
-                <li><a routerLink="article-list" class="monprojet">Liste</a></li>
+                <li><a routerLink="article-list" class="monprojet">Articles</a></li>
                 <li><a routerLink="/user-list" class="monprojet">Utilisateurs</a></li>
                 <li><a routerLink="/ajout-article" class="monprojet">Ajouter un article</a></li>
                 <li class="boutonsdroite logout"><a (click)="deconnexion()">Se déconnecter</a></li>
